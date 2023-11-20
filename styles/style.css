@@ -8,10 +8,52 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: #fff;
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:     #f8f9f9;
 }
 
-/* Add your css  */
+.container{
+    position: relative;
+    max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px 10px;
+    background: rgb(39, 23, 158);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: #61baf5;
+    color: #0c0c0c;
+    pointer-events: none;
+}
+.buttons{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #babdbf;
+}
+.buttons button:active{
+    transform: scale(0.99);
+}
+.operator{
+    color: rgb(218, 22, 22);
+}
