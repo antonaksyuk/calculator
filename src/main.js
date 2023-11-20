@@ -1,6 +1,6 @@
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
-const operatorlChars = ["%", "*", "/", "-", "+", "="];
+const operatorChars = ["%", "*", "/", "-", "+", "="];
 let outcome = "";
 
 const count = (btnValue) => {
@@ -11,7 +11,7 @@ const count = (btnValue) => {
   } else if (btnValue === "DEL") {
     outcome = outcome.toString().slice(0, -1);
   } else {
-    if (outcome === "" && operatorlChars.includes(btnValue)) return;
+    if (outcome === "" && operatorChars.includes(btnValue)) return;
     outcome += btnValue;
   }
   display.value = outcome;
